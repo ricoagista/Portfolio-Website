@@ -35,7 +35,13 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 body {
@@ -711,5 +717,20 @@ footer {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Performance optimizations for mobile */
+    * {
+        /* Disable transitions on mobile for better performance */
+        transition: none !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    /* Re-enable essential interactions only */
+    .social-icon:hover,
+    .tag:hover,
+    .service-card:hover {
+        transition: background-color 0.2s ease !important;
     }
 }

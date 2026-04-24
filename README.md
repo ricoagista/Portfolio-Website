@@ -1,12 +1,20 @@
-# Rico Agista - Personal Portfolio Website
+# Rico Agista - Cloud Computing & DevOps Expert Portfolio
 
-This repository contains the source code for my personal portfolio website, designed to showcase my skills, projects, and professional experience.
+This repository contains the source code for Rico Agista's professional portfolio website, designed to showcase cloud computing expertise, DevOps solutions, cybersecurity knowledge, and web development projects.
 
 ## 🚀 Overview
 
-The website is a modern, responsive personal portfolio built with vanilla web technologies. It features a clean user interface with dark mode support, smooth scrolling, and interactive elements.
+Rico Agista is a Cloud Engineer and DevOps Specialist with 3+ years of professional experience in architecting secure, scalable cloud environments. This modern, responsive personal portfolio is built with vanilla web technologies and features SEO optimization, dark/light mode support, and interactive elements.
 
-**Live Demo:** [ricoagista.github.io](https://ricoagista.github.io)
+**Live Demo:** [ricoagista.my.id](https://ricoagista.my.id)
+
+### Key Features
+- **Cloud Computing Expertise**: AWS, cloud architecture, and infrastructure design
+- **DevOps Solutions**: CI/CD pipelines, automation, and deployment strategies  
+- **Cybersecurity Focus**: System security, threat protection, and compliance
+- **System Administration**: Server management, Linux administration, shell scripting
+- **Web Development**: Full-stack development with modern frameworks
+- **UI/UX Design**: User-centered design and interface creation
 
 ## ✨ Features
 
