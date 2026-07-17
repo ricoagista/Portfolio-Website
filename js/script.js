@@ -40,34 +40,104 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Intersection Observer for Animations
-    const observerOptions = {
-        threshold: 0.1
-    };
+    // GSAP Animations
+    if (typeof gsap !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target);
-            }
+        // Hero Section Animation
+        const heroTimeline = gsap.timeline();
+        
+        heroTimeline.fromTo(".hero-title", 
+            { y: 30, opacity: 0 }, 
+            { y: 0, opacity: 1, duration: 1, ease: "power3.out", delay: 0.1 }
+        )
+        .fromTo(".btn-primary", 
+            { y: 20, opacity: 0 }, 
+            { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 
+            "-=0.6"
+        )
+        .fromTo(".stat-item", 
+            { y: 20, opacity: 0 }, 
+            { y: 0, opacity: 1, duration: 0.6, ease: "power3.out", stagger: 0.15 }, 
+            "-=0.4"
+        )
+        .fromTo(".social-floating .social-icon", 
+            { x: 30, opacity: 0 }, 
+            { x: 0, opacity: 1, duration: 0.6, ease: "power3.out", stagger: 0.1 }, 
+            "-=0.4"
+        );
+
+        // Section Headers Animation
+        gsap.utils.toArray('.section-header, .section-heading, .projects-header h2').forEach(header => {
+            gsap.fromTo(header,
+                { y: 30, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: header,
+                        start: "top 85%",
+                    },
+                    y: 0, opacity: 1, duration: 0.8, ease: "power3.out"
+                }
+            );
         });
-    }, observerOptions);
 
-    document.querySelectorAll('.service-card, .project-card, .timeline-item').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
+        // About Section Animation
+        gsap.fromTo(".about-image-container",
+            { x: -40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".about-grid",
+                    start: "top 80%",
+                },
+                x: 0, opacity: 1, duration: 1, ease: "power3.out"
+            }
+        );
 
-    // Add fade-in class style
-    const styleSheet = document.createElement("style");
-    styleSheet.innerText = `
-        .fade-in {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-    `;
-    document.head.appendChild(styleSheet);
+        gsap.fromTo(".about-content",
+            { x: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".about-grid",
+                    start: "top 80%",
+                },
+                x: 0, opacity: 1, duration: 1, ease: "power3.out"
+            }
+        );
+
+        // Services Cards Animation
+        gsap.fromTo(".service-card",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".services-grid",
+                    start: "top 80%",
+                },
+                y: 0, opacity: 1, duration: 0.8, ease: "power3.out", stagger: 0.1
+            }
+        );
+
+        // Projects Cards Animation
+        gsap.fromTo(".project-card",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".project-grid",
+                    start: "top 80%",
+                },
+                y: 0, opacity: 1, duration: 0.8, ease: "power3.out", stagger: 0.15
+            }
+        );
+
+        // Experience Timeline Animation
+        gsap.fromTo(".timeline-item",
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: ".timeline",
+                    start: "top 80%",
+                },
+                y: 0, opacity: 1, duration: 0.8, ease: "power3.out", stagger: 0.2
+            }
+        );
+    }
 });
