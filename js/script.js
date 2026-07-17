@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (theme === 'dark') {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
-            if (navLogo) navLogo.src = 'img/icon.jpg';
+            if (navLogo) navLogo.src = 'https://cdn.ricoagista.my.id/personal-portfolio/icon-light.avif';
         } else {
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
-            if (navLogo) navLogo.src = 'img/icon1.jpg';
+            if (navLogo) navLogo.src = 'https://cdn.ricoagista.my.id/personal-portfolio/icon-dark.avif';
         }
     }
 
