@@ -1,17 +1,24 @@
-# Rico Agista - Cloud Computing & DevOps Expert Portfolio
+# Rico Agista - Personal Portfolio Website
 
-This repository contains the source code for Rico Agista's professional portfolio website, designed to showcase cloud computing expertise, DevOps solutions, cybersecurity knowledge, and web development projects.
+Welcome to the repository for my personal portfolio website!
+
+**🌐 Live Demo:** [ricoagista.my.id](https://ricoagista.my.id)
+
+## 🎯 What is this repository for?
+
+This repository contains the complete source code for my digital portfolio hosted via GitHub Pages. It serves as my online resume and central hub, designed to:
+- **Showcase my professional identity** as a Cloud Engineer, DevOps Specialist, and Web Developer.
+- **Display my projects and experience** to potential clients, employers, and collaborators.
+- **Demonstrate my technical skills** by building a modern, responsive, and SEO-optimized static website from scratch using vanilla web technologies.
 
 ## 🚀 Overview
 
-Rico Agista is a Cloud Engineer and DevOps Specialist with 3+ years of professional experience in architecting secure, scalable cloud environments. This modern, responsive personal portfolio is built with vanilla web technologies and features SEO optimization, dark/light mode support, and interactive elements.
+I am Rico Agista, a Cloud Engineer and DevOps Specialist with 3+ years of professional experience in architecting secure, scalable cloud environments. This portfolio reflects my commitment to high-quality design, reliability, and security.
 
-**Live Demo:** [ricoagista.my.id](https://ricoagista.my.id)
-
-### Key Features
-- **Cloud Computing Expertise**: AWS, cloud architecture, and infrastructure design
+### Key Expertise Showcased
+- **Cloud Computing**: AWS, cloud architecture, and infrastructure design
 - **DevOps Solutions**: CI/CD pipelines, automation, and deployment strategies  
-- **Cybersecurity Focus**: System security, threat protection, and compliance
+- **Cybersecurity**: System security, threat protection, and compliance
 - **System Administration**: Server management, Linux administration, shell scripting
 - **Web Development**: Full-stack development with modern frameworks
 - **UI/UX Design**: User-centered design and interface creation
@@ -21,18 +28,14 @@ Rico Agista is a Cloud Engineer and DevOps Specialist with 3+ years of professio
 - **Responsive Design:** Fully responsive layout that adapts to all device sizes (Desktop, Tablet, Mobile).
 - **Dark/Light Mode:** Built-in theme toggler with persistent preference saving.
 - **Interactive UI:** Smooth transitions, hover effects, and animated elements.
-- **Sections:**
-  - **About:** Introduction and professional summary.
-  - **Services:** Overview of technical expertise (Cloud, Security, DevOps, etc.).
-  - **Projects:** Showcase of recent work with links to code and demos.
-  - **Experience:** Timeline of professional career and education.
-  - **Contact:** Social media links and contact information.
+- **Custom 404 Page:** User-friendly error page for broken links.
+- **SEO Optimized:** Structured data, canonical links, and standard meta tags for high search engine visibility.
 
 ## 🛠️ Tech Stack
 
 - **HTML5:** Semantic markup structure.
 - **CSS3:** Custom styling with CSS Variables for theming.
-- **JavaScript (ES6+):** logic for theme toggling and interactivity.
+- **JavaScript (ES6+):** Logic for theme toggling and interactivity.
 - **Font Awesome:** Iconography.
 
 ## 📂 Project Structure
@@ -41,10 +44,14 @@ Rico Agista is a Cloud Engineer and DevOps Specialist with 3+ years of professio
 ricoagista.github.io/
 ├── css/
 │   └── style.css       # Main stylesheet
-├── img/                # Images and assets
 ├── js/
 │   └── script.js       # Main JavaScript file
 ├── index.html          # Main HTML entry point
+├── 404.html            # Custom error page
+├── CNAME               # Custom domain configuration
+├── robots.txt          # Search engine crawler instructions
+├── sitemap.xml         # Website structure for SEO
+├── security.txt        # Security policy and contact info
 └── README.md           # Project documentation
 ```
 
@@ -68,7 +75,7 @@ Since this is a static website, you don't need to install any dependencies or bu
 
 - GitHub: [@ricoagista](https://github.com/ricoagista)
 - LinkedIn: [Rico Shandika Jovial Agista](https://www.linkedin.com/in/ricoshandikajovialagista/)
-- Email: ricoagista@gmail.com
+- Email: info@ricoagista.my.id
 
 ---
 © 2026 Rico Shandika Jovial Agista. All rights reserved.
