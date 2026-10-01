@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Istilah Presentasi PLN</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen px-4 py-5 max-w-lg mx-auto">
+
+    <header class="sticky top-0 bg-white pt-2 pb-4 border-b border-gray-200 z-10 mb-6">
+        <h1 class="text-xl font-bold text-gray-900 mb-3 tracking-tight">Catatan Istilah Presentasi</h1>
+        
+        <!-- Input Pencarian Sederhana -->
+        <div class="relative">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Cari istilah atau penjelasan..." 
+                class="w-full bg-gray-100 text-gray-900 text-base rounded-lg px-3.5 py-2.5 border border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 transition-colors"
+                oninput="filterTerms()"
+            >
+        </div>
+    </header>
+
+    <main>
+        <!-- Pesan ketika pencarian tidak ditemukan -->
+        <div id="noResult" class="hidden text-center py-8 text-gray-500 text-sm">
+            Tidak ada istilah yang cocok dengan pencarian.
+        </div>
+
+        <!-- DAFTAR ISTILAH BERDASARKAN KATEGORI A - G -->
+        <div id="contentList" class="space-y-8">
+
+            <section class="category-block">
+                <h2 class="text-base font-bold text-gray-900 border-b-2 border-gray-900 pb-1 mb-3">
+                    A. Istilah Organisasi & Konteks
+                </h2>
+                <div class="space-y-4">
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">PT PLN (Perusahaan Listrik Negara) Persero</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Perusahaan listrik milik negara Indonesia. Salah satu perusahaan energi terkemuka di Indonesia.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">UP2D S2JB</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Singkatan dari Unit Pelaksana Pengatur Distribusi – Sumatera Selatan, Jambi, dan Bangka Belitung. Unit kerja PLN yang mengatur distribusi listrik di wilayah tersebut. Ini objek penelitiannya.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">WLAN (Wireless Local Area Network)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Jaringan komputer lokal tanpa kabel, biasanya pakai WiFi.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">IEEE 802.11</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Standar internasional untuk jaringan WiFi. Kalau kamu lihat "802.11 Deauthentication" artinya serangan pada protokol WiFi versi itu.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">SSID (Service Set Identifier)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Nama jaringan WiFi yang muncul di HP/laptop kamu. Contoh: "PLN_Guest" atau "WiFi_Kantor".</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-block">
+                <h2 class="text-base font-bold text-gray-900 border-b-2 border-gray-900 pb-1 mb-3">
+                    B. Istilah Keamanan Umum
+                </h2>
+                <div class="space-y-4">
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Vulnerability (Kerentanan)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Celah atau kelemahan pada sistem yang bisa dimanfaatkan penyerang.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Exploitation (Eksploitasi)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Tindakan memanfaatkan celah tersebut untuk menyerang.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Threat (Ancaman)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Potensi bahaya yang bisa menyerang sistem.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Penetration Testing (Pentest)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Uji coba menyerang sistem dengan izin resmi, tujuannya mencari celah sebelum penyerang asli menemukannya. Ibaratnya: kamu menyuruh "pencuri profesional" mencoba membobol rumahmu, supaya kamu tahu di mana lemahnya.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">PTES (Penetration Testing Execution Standard)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Standar internasional yang mengatur tahapan pentest. Ada 7 tahap (lihat gambar Fig. 1 di jurnal).</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Firewall</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Sistem keamanan yang menyaring lalu lintas data masuk/keluar jaringan. Seperti satpam yang memeriksa tamu.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">IDS/IPS (Intrusion Detection System / Intrusion Prevention System)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">IDS = sistem yang mendeteksi serangan.<br>IPS = sistem yang mendeteksi dan langsung memblokir serangan.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-block">
+                <h2 class="text-base font-bold text-gray-900 border-b-2 border-gray-900 pb-1 mb-3">
+                    C. Istilah Perangkat Jaringan
+                </h2>
+                <div class="space-y-4">
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Access Point (AP)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Perangkat pemancar WiFi. Biasanya berbentuk kotak dengan antena, dipasang di langit-langit kantor.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">AP Isolation (Isolasi Access Point)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Fitur yang membuat setiap pengguna WiFi tidak bisa saling berkomunikasi satu sama lain. Kalau fitur ini aktif, user A tidak bisa mengintip data user B. Kalau tidak aktif (kasus di jurnal ini), penyerang bisa lebih mudah menyerang.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">MAC Address</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Alamat unik setiap perangkat (HP/laptop) yang diberikan pabrik. Seperti nomor KTP perangkat.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">MAC Filtering</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Fitur yang hanya mengizinkan perangkat dengan MAC Address tertentu untuk konek WiFi. Seperti daftar tamu undangan.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">IP Address</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Alamat logis perangkat di jaringan. Seperti alamat rumah di internet.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">DHCP (Dynamic Host Configuration Protocol)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Layanan yang otomatis memberikan IP Address ke perangkat yang baru konek WiFi.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">DNS (Domain Name System)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Layanan yang menerjemahkan nama website (misal google.com) menjadi IP Address.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Broadcast</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Cara mengirim data ke semua perangkat di jaringan sekaligus, bukan ke satu perangkat saja.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Auto-connect</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Fitur di HP/laptop yang otomatis menyambung ke WiFi yang pernah terhubung. Ini berbahaya kalau ada WiFi palsu dengan nama sama — HP kamu bisa otomatis konek ke WiFi palsu itu.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Static ARP Entries / ARP Binding</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Konfigurasi manual yang mengunci pasangan IP-MAC Address agar tidak bisa dipalsukan. Ini pencegahan serangan ARP spoofing.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-block">
+                <h2 class="text-base font-bold text-gray-900 border-b-2 border-gray-900 pb-1 mb-3">
+                    D. Istilah Serangan (Attack)
+                </h2>
+                <div class="space-y-4">
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Deauthentication Attack</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Serangan yang memutuskan koneksi pengguna dari WiFi secara paksa. Pengguna tiba-tiba terputus tanpa alasan. Di jurnal ini, penyerang mengirim paket "deauth" palsu ke AP.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Rogue Access Point</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Access Point palsu yang dipasang penyerang. Sepertinya WiFi resmi, tapi sebenarnya milik penyerang.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Evil Twin</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Jenis serangan rogue access point yang membuat WiFi palsu dengan nama (SSID) sama atau mirip dengan WiFi asli. Pengguna dikira konek ke WiFi kantor, ternyata ke WiFi penyerang. Semua data (username, password) bisa dicuri.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">ARP (Address Resolution Protocol)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Protokol yang menghubungkan IP Address dengan MAC Address di jaringan lokal.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">ARP Spoofing / ARP Poisoning</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Serangan memalsukan ARP sehingga penyerang bisa berada "di tengah" antara user dan jaringan. Akibatnya penyerang bisa: Membaca data user, Memblokir akses internet user, Memodifikasi data.<br>Ibaratnya: penyerang menyamar sebagai tukang pos, jadi semua surat (data) lewat tangannya dulu.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Aireplay-ng</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Tool di Kali Linux untuk mengirim paket serangan ke jaringan WiFi, termasuk deauthentication.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Captive Portal</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Halaman login yang muncul saat kamu konek WiFi (misal di hotel/kafe). Di serangan evil twin, penyerang membuat captive portal palsu untuk mencuri password kamu.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-block">
+                <h2 class="text-base font-bold text-gray-900 border-b-2 border-gray-900 pb-1 mb-3">
+                    E. Istilah Tools
+                </h2>
+                <div class="space-y-4">
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Kali Linux</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Sistem operasi khusus untuk hacking/pentest. Banyak tool keamanan sudah terinstall di dalamnya.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Airgeddon</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Tool di Kali Linux untuk audit WiFi. Bisa melakukan deauth, evil twin, dan mencuri password.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Evil Limiter</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Tool untuk melakukan ARP spoofing, khususnya memblokir/membatasi akses internet user lain di jaringan yang sama.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Wireshark</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Tool untuk melihat lalu lintas data di jaringan (sniffing). Di jurnal ini dipakai untuk membuktikan bahwa serangan deauth berhasil terdeteksi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-block">
+                <h2 class="text-base font-bold text-gray-900 border-b-2 border-gray-900 pb-1 mb-3">
+                    F. Istilah Keamanan WiFi
+                </h2>
+                <div class="space-y-4">
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">WPA2 (Wi-Fi Protected Access 2)</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Standar enkripsi WiFi yang umum dipakai. Sudah ada celah keamanan.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">WPA3</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Standar enkripsi WiFi terbaru, lebih aman dari WPA2. Jurnal merekomendasikan upgrade ke WPA3.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">Enkripsi</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Proses mengacak data agar tidak bisa dibaca orang lain. Ibarat menulis surat pakai bahasa rahasia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-block">
+                <h2 class="text-base font-bold text-gray-900 border-b-2 border-gray-900 pb-1 mb-3">
+                    G. Istilah dari Hasil Penelitian
+                </h2>
+                <div class="space-y-4">
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">"AkuGanteng 2020"</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Password WiFi asli PT PLN yang berhasil dicuri lewat serangan evil twin. Ini bukti bahwa serangan berhasil.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">15 Pengujian</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Total keseluruhan uji coba: 5 (infrastructure) + 5 (rogue AP) + 5 (ARP spoofing) = 15.</p>
+                    </div>
+                    <div class="term-item">
+                        <h3 class="text-sm font-bold text-gray-900">3 Gagal</h3>
+                        <p class="text-sm text-gray-700 mt-0.5 leading-relaxed">Jumlah pengujian yang tidak berhasil — semuanya di jenis rogue access point (2 dari 5 gagal di rogue AP + hitungan di kesimpulan jadi 3).</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        function filterTerms() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const categories = document.querySelectorAll('.category-block');
+            const noResult = document.getElementById('noResult');
+            let totalVisibleTerms = 0;
+
+            categories.forEach(category => {
+                const items = category.querySelectorAll('.term-item');
+                let visibleItemsInCategory = 0;
+
+                items.forEach(item => {
+                    const title = item.querySelector('h3').textContent.toLowerCase();
+                    const desc = item.querySelector('p').textContent.toLowerCase();
+
+                    if (title.includes(query) || desc.includes(query)) {
+                        item.style.display = 'block';
+                        visibleItemsInCategory++;
+                        totalVisibleTerms++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Sembunyikan judul kategori jika tidak ada istilah yang cocok di dalamnya
+                if (visibleItemsInCategory > 0) {
+                    category.style.display = 'block';
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+
+            // Tampilkan pesan kosong jika tidak ada hasil sama sekali
+            if (totalVisibleTerms === 0) {
+                noResult.classList.remove('hidden');
+            } else {
+                noResult.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
